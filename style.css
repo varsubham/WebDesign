@@ -215,3 +215,35 @@
     width: 100%;
    
 }
+.testimonial .heading{
+    color: white;
+    text-align: center;
+    padding-bottom: 2em;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.testimonial .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.testimonial .container .content{
+    padding: 1em;  
+}
+.testimonial .container .content .border{
+    background-color: white;
+    padding: 4em;
+}
+.testimonial .container .content .border .right{
+    font-size: 1.2em;
+    color: #3475ca;
+    font-weight: 700;
+    text-align: right;
+    cursor: pointer;
+    opacity: 0.75;
+}
+.testimonial .container .content .border .right:hover{
+    opacity: 1;
+}
+
+/* Contact */
