@@ -69,7 +69,7 @@
 .about{
     display: flex;
     width: 100%;
-    height: 100vh;
+    
     /* background-color: #0d1920; */
 }
 .about .content{
@@ -225,6 +225,8 @@
 .testimonial .container{
     display: flex;
     align-items: center;
+    
+    flex-direction: row;
     justify-content: space-between;
 }
 .testimonial .container .content{
@@ -352,4 +354,142 @@
 }
 .footer i{
     cursor: pointer;
+}
+@media screen and (max-width: 935px){
+    .banner{
+        padding: 50px;
+    }
+    .banner .content h1{
+        font-size: 2.75em;
+    }
+    .banner .content p{
+        font-size: 0.8em;
+        padding: 0.5em 5em;
+    }
+    .banner header .logo{
+        font-size: 1em;
+    }
+    .banner header .toogle{
+        width: 30px;
+        height: 23.3px;
+    }
+    /* About */
+    .about{
+        flex-direction: column;
+    }
+    .about .content{
+        width: 100%;
+        padding: 50px 100px;
+    }
+    .about .window{
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: center;
+    }
+    /* Services */
+    .service{
+        padding: 2.8em;
+        
+    }
+    .service header h1{
+        font-size: 1.5em;
+    }
+    .service header p{
+        font-size: 0.8em;
+    }
+    .service .image-content{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .service .image-content .service-design{
+        margin-bottom: 2em;
+        width: 291.6px;
+        height: 333.3px;
+    }
+    /* Technology */
+    .technology{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .technology .content h1{
+        text-align: center;
+        font-size: 1.8em;
+    }
+    .technology .content p{
+        text-align: center;
+        padding-bottom: 2em;
+    }
+    .technology .content{
+        width: 100%;
+        padding: 1em 3em;
+    }
+    /* Client */
+    .client{
+        padding: 3.12em;
+    }
+    .client .container{
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+    .client .container img{
+        
+        margin: 1em;
+        padding-bottom: 4em;
+        
+    }
+    /* Testimonial */
+    .testimonial{
+        padding: 3.12em;
+    }
+    .testimonial .container{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    /* Contact Us */
+    .contact .content h1{
+        padding-top: 2em;
+    }
+    .contact .details{
+        flex-direction: column;
+    }
+    .contact .details .red-bg{
+        width: 100%;
+    }
+    .contact .details .ice-cream{
+        width: 100%;
+    }
+    .contact .details .red-bg .form input{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 535px){
+    .banner header .toogle{
+        visibility: hidden;
+    }
+    .about .content p{
+        font-size: 0.8em;
+    }
+    .about .content h1{
+        font-size: 1em;
+    }
+    .about .content{
+        height: 80vh;
+    }
+    .about .window{
+        height: 80vh;
+    }
+    
+}
+@media screen and (max-width: 1260px){
+    .service .image-content .service-design{
+        width: 240px;
+        height: 275px;
+    }
+    .client .container img{
+        max-width: 160px;
+    }
 }
