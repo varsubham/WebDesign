@@ -336,6 +336,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #162c3b;
 }
 .footer h4{
     color: white;
